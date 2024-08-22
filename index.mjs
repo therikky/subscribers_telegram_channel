@@ -29,9 +29,9 @@ async function getTotalSubscribers(channelNames) {
 
 bot.command('start', async (ctx) => {
     const channelNames = ['@username' и тп каналы через запятую];
-    const channal = await(channelNames);
+    const channel = await(channelNames);
     const totalSubscribers = await getTotalSubscribers(channelNames);
-        ctx.reply(`Каналы:\n${channal}\n\nПодписчиков:\n${totalSubscribers}`);
+        ctx.reply(`Каналы:\n${channel}\n\nПодписчиков:\n${totalSubscribers}`);
 });
 
 bot.launch();
