@@ -28,11 +28,11 @@ async function getTotalSubscribers(channelNames) {
 }
 
 bot.command('start', async (ctx) => {
-    const channelNames = ['@arthub34', '@poppyplaytime34', '@purochanged34', '@furryhub34', '@judyhops34', '@lolabunny34', '@loonaboss', '-1001616733733', '-1001892940729', '@foxyfoxtrot34', '@pappyfox34', '-1001718104006', '-1001504340827', '-1001821932394', '@mlphub34', '-1001975452658', '-1001934688439', '-1001644008108', '-1001609568203', '@boykisser3', '@volumfurry', '@bluey_34', '@pawpatrol34', '@pomni34art', '@rambley34'];
+    const channelNames = ['@username' и тп каналы через запятую];
     const channal = await(channelNames);
     const totalSubscribers = await getTotalSubscribers(channelNames);
         ctx.reply(`Каналы:\n${channal}\n\nПодписчиков:\n${totalSubscribers}`);
 });
 
 bot.launch();
-console.log('Bot started...');
+console.log('Бот запущен');
